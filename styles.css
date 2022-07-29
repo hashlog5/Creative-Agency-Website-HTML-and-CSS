@@ -29,11 +29,18 @@ body {
 }
 
 section {
+  margin-top: 60px;
   height: 100vh;
   padding: 100px;
 
   display: flex;
+  flex-direction: column;
   align-items: center;
+}
+
+section.home {
+  margin-top: 0;
+  flex-direction: row;
 }
 
 /* button */
