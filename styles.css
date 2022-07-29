@@ -2,6 +2,7 @@
 
 :root {
   --primary-color: #f60f20;
+  --secondary-color: #1b206e;
 }
 
 /* base styles */
@@ -201,7 +202,7 @@ section.home {
 .services .service h2 {
   margin-top: 20px;
 
-  color: #1b206e;
+  color: var(--secondary-color);
   font-size: 24px;
   font-weight: 500;
 }
@@ -263,6 +264,107 @@ section.home {
   opacity: 1;
 }
 
+/* contact */
+.contact {
+  width: 100%;
+  margin-top: 50px;
+
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contact-form {
+  width: calc(100% - 350px);
+  padding: 60px 40px 20px;
+
+  position: relative;
+
+  background: #f9f9f9;
+}
+
+.contact-form form {
+  width: 100%;
+}
+
+.contact-form .row {
+  width: 100%;
+
+  display: flex;
+}
+
+.contact-form .input50 {
+  width: 50%;
+  margin: 0 10px;
+}
+
+.contact-form .input100 {
+  width: 100%;
+  margin: 0 10px;
+}
+
+.contact-form .row input,
+.contact-form .row textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+
+  position: relative;
+
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: #111;
+  background: transparent;
+  outline: none;
+  font-size: 16px;
+  resize: none;
+}
+
+.contact-form .row input[type="submit"] {
+  margin: 0;
+
+  border: 0;
+  background-color: var(--secondary-color);
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.contact-form .row textarea {
+  height: 150px;
+}
+
+.contact-info {
+  width: 350px;
+  padding: 60px 40px 20px;
+
+  background: #f9f9f9;
+}
+
+.contact-info .info-box {
+  margin-bottom: 40px;
+
+  display: flex;
+  align-items: flex-start;
+}
+
+.contact-info .info-box .contact-icon {
+  width: 20px;
+  margin-right: 25px;
+}
+
+.contact-info .info-box .details h4 {
+  color: var(--secondary-color);
+}
+
+.contact-info .info-box .details p,
+.contact-info .info-box .details a {
+  color: #111;
+}
+
 @media (max-width: 1068px) {
   .home-img {
     display: none;
@@ -285,6 +387,31 @@ section.home {
 
   .services {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact {
+    flex-direction: column;
+  }
+
+  .contact-form {
+    width: 100%;
+    padding: 30px 30px 20px;
+  }
+
+  .contact-form .row {
+    flex-direction: column;
+  }
+
+  .contact-form .input50,
+  .contact-form .input100 {
+    width: 100%;
+    margin: 0;
+  }
+
+  .contact-info {
+    width: 100%;
+    margin-top: 20px;
+    padding: 30px 30px 20px;
   }
 }
 
