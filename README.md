@@ -1,0 +1,1 @@
+This repo is from the [Creative Agency Website From Scratch | HTML & CSS](https://youtu.be/lvYnfMOUOJY) YouTube tutorial by [Brad Traversy](https://www.youtube.com/c/TraversyMedia) [@bradtraversy](https://github.com/bradtraversy).
